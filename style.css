@@ -1,0 +1,41 @@
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 0;
+  background-color: lightgrey;
+}
+
+/* header */
+
+.page-nav {
+  background-color: #000000;
+}
+
+.site-navigation {
+  width: 583px;
+  height: 95px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 0;
+}
+
+/* .menu-item {
+  
+} */
+
+.menu-item-link {
+  font-size: 14px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  list-style: none;
+  text-decoration: none;
+  color: #ffffff;
+  opacity: 0.8;
+}
