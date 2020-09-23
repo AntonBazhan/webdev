@@ -1,6 +1,56 @@
-* {
+/* Общие настройки html */
+
+html {
   box-sizing: border-box;
 }
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Подключение шрифтов */
+
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  src: url("./assets/fonts/Roboto-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  src: url("./assets/fonts/Roboto-Bold.ttf");
+}
+
+/* @font-face {
+  font-family: "Roboto Slab";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/roboto-slab-v9-latin-regular.woff");
+}
+
+@font-face {
+  font-family: "WisdomScript";
+  font-style: italic;
+  font-weight: 400;
+  src: url("../fonts/WisdomScriptAJ.woff");
+}
+
+@font-face {
+  font-family: "DroidSetif-Italic";
+  font-style: italic;
+  font-weight: 400;
+  src: url("../fonts/DroidSerif-Italic.woff");
+} */
 
 .container {
   max-width: 1600px;
@@ -25,17 +75,19 @@
   padding: 0;
 }
 
-/* .menu-item {
-  
-} */
-
 .menu-item-link {
   font-size: 14px;
-  font-family: Roboto;
+  font-family: "Roboto";
   font-style: normal;
   font-weight: normal;
   list-style: none;
   text-decoration: none;
-  color: #ffffff;
+  color: lightgrey;
   opacity: 0.8;
+}
+
+.menu-item a:hover,
+a.active {
+  color: #fff;
+  box-shadow: 0 1px 0 0 #fff;
 }
