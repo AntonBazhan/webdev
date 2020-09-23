@@ -27,8 +27,8 @@ img {
 @font-face {
   font-family: "Roboto";
   font-style: normal;
-  font-weight: 700;
-  src: url("./assets/fonts/Roboto-Bold.ttf");
+  font-weight: 500;
+  src: url("./assets/fonts/Roboto-Medium.ttf");
 }
 
 /* @font-face {
@@ -53,7 +53,7 @@ img {
 } */
 
 .container {
-  max-width: 1600px;
+  width: 1600px;
   margin: 0 auto;
   padding: 0;
   background-color: lightgrey;
@@ -62,7 +62,11 @@ img {
 /* header */
 
 .page-nav {
+  position: absolute;
+  width: 100%;
+  max-width: 1310px;
   background-color: #000000;
+  z-index: 2;
 }
 
 .site-navigation {
@@ -75,12 +79,15 @@ img {
   padding: 0;
 }
 
+.menu-item {
+  list-style: none;
+}
+
 .menu-item-link {
   font-size: 14px;
   font-family: "Roboto";
   font-style: normal;
-  font-weight: normal;
-  list-style: none;
+  font-weight: 400;
   text-decoration: none;
   color: lightgrey;
   opacity: 0.8;
@@ -90,4 +97,15 @@ img {
 a.active {
   color: #fff;
   box-shadow: 0 1px 0 0 #fff;
+  font-weight: 500;
+}
+
+/* banner-section */
+
+.banner-section .banner-image {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
